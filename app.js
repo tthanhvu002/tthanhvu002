@@ -1,0 +1,1 @@
+document.querySelector('.table-wrap').style.height = document.querySelector('table').offsetHeight + 'px'

@@ -1,0 +1,910 @@
+*{
+    margin: 0;
+    padding: 0;
+    --f1:  'Lora', serif;
+    --f2: 'Roboto', sans-serif;
+    font-family: var(--f1);
+}
+
+.wrapper{
+    overflow: hidden;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 10%;
+}
+.d-flex{
+    display: flex;
+
+}
+.flex-column{
+    flex-direction: column;
+}
+.align-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.VQMM{
+    padding-top: 54px;
+    background-size: cover;
+    background-image: url('./img/bg1.png');
+}
+.header{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+.nav{
+    gap: 30px;
+    list-style: none;
+}
+.nav .item{
+    color: #1B6437;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+.nav .item .line{
+    position: absolute;
+    bottom: -10px;
+    height: 1px;
+    left: 0;
+    right: 0;
+    
+    background-color: #fff;
+}
+.nav .item.active .line{
+    background-color: #1B6437;
+}
+.nav .item.active{
+    color:#1B6437 ;
+}
+.wheel{
+    width: 561px;
+    transform: translateX(132px);
+    object-fit: contain;
+}
+
+.VQMM-content{
+    margin-top: 5px;
+}
+.input-wrap{
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px dashed #000;
+    transform: translateY(23px);
+}
+
+.input-inner{
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    border: 1px dashed black;
+}
+.input-inner h2{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.input-inner p{
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.input-inner input{
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px #ccc;
+    outline: none;
+    margin-top: 10px;
+    border: none;
+    width: 90%;
+}
+
+.input-inner input::placeholder{
+    font-size: 14px;
+    color: #888;
+    font-family: var(--f2);
+}
+
+/* cach thuc */
+.cachthuc{
+    background-image: url('./img/bound.png');
+}
+.cachthuc .img{
+    width: 500px;
+    transform: translateX(-70px);
+}
+.cachthuc .img-wrap img{
+    width: 240px;
+}
+.cachthuc-content h2{
+    color: #FEDA62;
+    font-size: 24px;
+    font-weight: bold;
+}
+.cachthuc-content h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+.cachthuc-content p{
+    color: #fff;
+    font-size: 18px;
+}
+.step{
+    padding-left: 14px;
+    list-style: none;
+}
+
+.step li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #FEDA62; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+.step li{
+    color: #fff;
+    margin: 14px 0;
+    font-size: 18px;
+}
+
+.img-wrap{
+    margin-left: -14px;
+}
+.cachthuc-content span{
+    font-size: 15px;
+    color: #fff;
+}
+
+/* cocau */
+.cocau{
+    background-image: url(./img/bg.png);
+    padding-top: 157px;
+}
+.cocau .title-wrap{
+    text-align: center;
+}
+.cocau .title-wrap h2{
+    color: #FEDA62;
+    font-size: 24px;
+    font-weight: bold;
+}
+.cocau .title-wrap h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.cocau .title-wrap img{
+    width: 200px;
+}
+.col img{
+    margin-top: 40px;
+    width: 400px;
+}
+.col:last-child img{
+    width: 650px;
+}
+
+/* the le */
+.thele{
+    background-image: url('./img/bg8.png');
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.thele .title-wrap{
+    text-align: center;
+}
+.thele .title-wrap h2{
+    color: #FEDA62;
+    font-size: 24px;
+    font-weight: bold;
+}
+.thele .title-wrap h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.thele-list{
+    margin-top: 50px;
+}
+.thele-item{
+    max-width: 340px;
+    gap: 10px;
+}
+.thele-item img{
+    object-fit: contain;
+    margin-bottom:auto ;
+}
+.thele-item-content{
+    color:#fff ;
+    gap: 5px;
+    text-align: left;
+}
+.thele-item-content p{
+    font-size: 24px;
+    font-weight: bold;
+}
+.thele-item-content span{
+    font-size: 14px;
+}
+
+/* ds */
+
+.ds{
+    background-image: url(./img/bg5.png);
+    padding-top: 62px;
+    text-align: center;
+}
+.ds .title-wrap{
+    text-align: center;
+}
+.ds .title-wrap h2{
+    color: #1B6437;
+    font-size: 24px;
+    font-weight: bold;
+}
+.ds .title-wrap h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+.ds-img{
+    width: 1000px;
+}
+
+
+.tabs{
+    color: #fff;
+    list-style:none;
+    justify-content: space-between;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+.tabs .line{
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgba(204, 204, 204, 0.559);
+    bottom: -10px;
+}
+.tab{
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tab .line{
+    opacity: 0;
+    transtion: 0.2s ease;
+    position: absolute;
+    bottom: -10px;
+    color: #FEDA62;
+    background-color: #FEDA62;
+    left: 0;
+    right: 0;
+    height: 2px;
+}
+.tab.active{
+    color: #FEDA62;
+}
+.tab.active .line{
+    opacity: 1;
+}
+
+.table-wrap{
+    margin-top: 34px;
+    position: relative;
+}
+table{
+    border-radius: 4px;
+    border: 1px dashed #000;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+    z-index: 99;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+tr{
+    border-bottom: 1px dashed #000;
+
+}
+th,td{
+    padding: 16px;
+    border-right: 1px solid black;
+
+}
+th{
+    background-color: #D1E0D7;
+    color: #1B6437;
+}
+td{
+    background-color: #fff;
+}
+
+.table-wrap img{
+    z-index: 0;
+
+    position: absolute;
+}
+.left{
+    top: 21px;
+    left: 5px;
+}
+.right{
+    top: 21px;
+    right: 5px;
+}
+
+/* hoatdong */
+.flex-wrap{
+    flex-wrap: wrap;
+
+}
+.hoatdong-item .hoatdong-item-content{
+    background-color: #D1E0D7;
+}
+.hoatdong-item{
+    width: calc(50% - 20px);
+    border: 1px dashed black;
+    border-radius: 8px;
+}
+.hoatdong-item.active .hoatdong-item-content{
+    background-color: #fff;
+}
+.hoatdong-item-content h3{
+    font-family: var(--f2);
+    font-size: 14px;
+    color: #1B6437;
+    margin-left: 12px;
+    font-weight: bold;
+}
+.hoatdong-item.active {
+    width: 140%;
+}
+.hoatdong-item-content h2{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.hoatdong-item-content p{
+    margin-top: 16px;
+    font-size: 14px;
+}
+.hoatdong-item-content{
+    margin-top: -5px;
+    padding: 15px;
+}
+.hoatdong-item.active{
+    border: none;
+}
+.hoatdong-item img{
+    width: 100%;
+}
+
+.hoatdong-item-content h3::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #1B6437; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+.hd{
+    background-image: url(./img/bg6.png);
+    text-align: center;
+    padding-top: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  /* faq */
+
+  .faq{
+      background-image: url(./img/bg7.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 128px;
+      padding-bottom: 128px;
+  }
+.plus{
+    color: #1B6437;
+    font-weight: bold;
+}
+.faq-content h3{
+    margin-top: 38px;
+    font-size: 24px;
+}
+.faq-content p{
+    font-size: 16px;
+    margin-top: 38px;
+}
+  .link{
+      font-weight: bold;
+      color:#1B6437 ;
+  }
+
+.faq .title-wrap h2{
+    color: #1B6437;
+    font-size: 24px;
+    font-weight: bold;
+}
+.faq .title-wrap h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+}
+.faq .title-wrap img{
+    width: 200px;
+}
+.faq-container{
+    gap: 30px;
+}
+.faq .title-wrap, .faq .faq-content{
+    flex: 50%;
+}
+
+/* news */
+.news{
+    background-image: url(./img/bg8.png);
+}
+.time{
+    display: flex;
+    gap: 17px;
+    color: #888;
+    font-size: 12px;
+    font-family: var(--f2);
+}
+.news .title-wrap h2{
+    font-size: 24px;
+    color: #FEDA62;
+}
+.news .title-wrap h1{
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.news .title-wrap img{
+    margin-top: 17px;
+    margin-bottom: 42px;
+}
+
+.news-list{
+    display: flex;
+    padding-left: 10%;
+    gap: 10px;
+
+}
+.news-item{
+    width: calc(26% - 10px);
+}
+.news-item.blur{
+    filter: contrast(45%);
+}
+.news-item img{
+    width: 100%;
+}
+.btn-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 53px;
+}
+.more-btn{
+    font-size: 14px;
+    font-weight: bold;
+    color: #1B6437;
+    cursor: pointer;
+}
+.next-btn{
+    padding: 8px 10px;
+    border-radius: 100rem;
+    border: 1px solid #1B6437;
+    cursor: pointer;
+}
+.next-btn span{
+    color: #1B6437;
+}
+.news-item-content{
+    padding: 24px;
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    transform: translateY(-30px);
+    border-radius: 8px;
+}
+.news-item-content h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 18px 0;
+}
+.news-item-content p{
+    font-family: var(--f2);
+    font-size: 14px;
+    margin-bottom: auto;
+}
+
+/* contact */
+.contact{
+    background-image: url(./img/bg9.png);
+    background-size: cover;
+    padding: 54px 0;
+    background-repeat: no-repeat;
+}
+
+.col-4{
+    width: calc(100/12*4%);
+    border: 1px dashed black;
+    padding: 24px;
+    border-radius: 8px;
+    height: fit-content;
+    padding-bottom: 80px;
+    position: relative;
+}
+.social-wrap{
+    position: absolute;
+    bottom: -80px;
+    display: flex;
+    gap: 10px;
+}
+.rice{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+.col-8{
+    width: calc(100/12*8% );
+}
+.brand-img{
+    gap: 10px;
+}
+.contact-info{
+    margin-top: 38px;
+    list-style: none;
+}
+
+.contact-info h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+.contact-info li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-family: var(--f2);
+    margin-top: 16px;
+}
+.col-8{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.col-8 .title-wrap{
+    text-align: center;
+}
+.col-8 .title-wrap h2{
+    color: #1B6437;font-size: 24px;
+}
+.col-8 .title-wrap h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.col-8 .title-wrap img{
+    margin-top: 17px;
+    margin-bottom: 40px;
+}
+.col-8 p{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    font-family: var(--f2);
+}
+.input-col{
+    margin-top: 32px;
+    gap: 32px;
+    display: flex;
+}
+textarea{
+    margin-top: 32px;
+    width: 100%;
+    height: 150px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 12px #ccc;
+}
+.input-col input::placeholder{
+    font-size: 14px;
+    font-family: var(--f2);
+    color: #888;
+}
+.input-col input:focus{
+    border-bottom: 1px solid #1B6437;
+}
+.input-col input{
+    box-shadow: 0px 2px 12px #ccc;
+
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    width: calc(50% - 16px);
+}
+.input-col input::selection{
+    border-bottom: 1px solid #1B6437;
+}
+
+.submit-btn{
+    background-color: #1B6437;
+    padding: 16px 70px;
+    font-size: 14px;
+    font-family: var(--f2);
+    color: #fff;
+    display: inline-block;
+    margin: 40px auto 0;
+    
+}
+
+/* footer */
+.footer{
+    background-color: #1B6437;
+    padding: 30px;
+    color: #fff;
+}
+.footer .container{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
+}
+.footer-nav{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.footer-nav li{
+    font-size: 14px;
+    font-family: var(--f2);
+    padding-right: 15px;
+    border-right: 1px solid #fff;
+}
+
+
+/* mobile */
+@media screen and (max-width: 767.98px) {
+    .header {
+        flex-direction: column;
+    }
+    .header img{
+        width: 170px;
+    }
+    .nav{
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .nav .item{
+        font-size: 10px;
+    }
+    .nav .item .line{
+        bottom: -5px;
+    }
+    .VQMM-content{
+        flex-direction: column;
+    }
+    .input-inner h2{
+        font-size: 25px;
+    }
+    .input-inner p{
+        font-size: 16px;
+    }
+    .wheel{
+        margin-top: 40px;
+        transform: unset;
+        text-align: center;
+        width: 400px;
+    }
+    .title-wrap h2{
+        font-size: 20px !important;
+    }
+    .title-wrap h1{
+        font-size: 30px !important;
+    }
+    .cachthuc{
+        padding-top: 40px;
+    }
+    .cachthuc-content h2{
+        font-size: 20px;
+    }
+    .cachthuc-content h1{
+        font-size: 30px;
+    }
+    .cachthuc .img-wrap{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .cachthuc-content{
+        max-width: 325px;
+        margin: 40px auto 0;
+    }
+    .cachthuc .img{
+        width: 300px;
+        transform: unset;
+        margin: 0 auto;
+    }
+    .cachthuc .container{
+        align-items: center;
+        flex-direction: column;
+    }
+    .cocau .d-flex{
+        flex-direction: column;
+    }
+    
+    .col:last-child img{
+        width: 500px;
+        margin-top: -60px;
+        height: fit-content;
+    }
+    .thele-list{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .thele-item-content p{
+        font-size: 14px;
+    }
+    .thele-item-content span{
+        font-size: 12px;
+    }
+    .ds-img{
+        width: 315px;
+    }
+    .tabs{
+        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    th,td{
+        padding: 10px;
+    }
+    .hd .d-flex{
+        flex-direction: column;
+    }
+    .hoatdong-item.active{
+        width: 100%;
+    }
+    .hoatdong-item{
+        width: 50%;
+    }
+    .faq-container{
+        flex-direction: column;
+    }
+    .news-list{
+        padding-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .news-item{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .contact .d-flex:first-child{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-4, .col-8{
+        width: 100%;
+    }
+    .col-8{
+        margin-top: 150px;
+    }
+    .footer .container{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: unset;
+        align-items: unset;
+    }
+    .footer-nav{
+        flex-direction: column;
+    }
+    .footer-nav li{
+        border: none;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and  (max-width: 1023px) {
+    .header img{
+        width: 180px;
+    }
+    .nav .item{
+        font-size: 12px;
+    }
+    .wheel{
+        width: 300px;
+        transform: translateX(60px);
+    }
+    .input-inner p{
+        font-size: 15px;
+    }
+    .cachthuc .container{
+        padding-top: 50px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .cachthuc .img-wrap{
+        justify-content: center;
+        gap: 20px;
+    }
+    .cachthuc .img{
+        transform: unset;
+        margin: 0 auto;
+        width: 300px;
+    }
+    .cocau{
+
+        padding-top: 50px;
+    }
+    .cocau .col img{
+        width: 310px;
+    }
+    .cocau .col:last-child img{
+        width: 400px;
+    }
+    .thele-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .thele-item-content p{
+        font-size: 16px;
+    }
+    .thele-item-content span{
+        font-size: 12px;
+    }
+    .ds{
+        text-align: center;
+    }
+    .ds-img{
+        margin: 0 auto;
+        width: 600px;
+    }
+    .news-list{
+        justify-content: center;
+
+    }
+    .news-item{ 
+        width: calc(40% - 20px);
+    }
+    .time{
+        font-size: 10px;
+    }
+}
+
+/* pc */
+@media screen and (min-width: 1024px) {
+
+}
+
