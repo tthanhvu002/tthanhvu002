@@ -30,6 +30,7 @@
     padding-top: 54px;
     background-size: cover;
     background-image: url('./img/bg1.png');
+    scroll-behavior: smooth;
 }
 .header{
     background-color: #fff;
@@ -45,6 +46,7 @@
     font-size: 18px;
     font-weight: 600;
     position: relative;
+    cursor: pointer;
 }
 .nav .item .line{
     position: absolute;
@@ -198,6 +200,8 @@
     background-image: url('./img/bg8.png');
     padding-top: 56px;
     padding-bottom: 56px;
+    scroll-behavior: smooth;
+
 }
 
 .thele .title-wrap{
@@ -243,6 +247,8 @@
 .ds{
     background-image: url(./img/bg5.png);
     padding-top: 62px;
+    scroll-behavior: smooth;
+
     text-align: center;
 }
 .ds .title-wrap{
@@ -420,6 +426,8 @@ td{
       background-size: cover;
       background-repeat: no-repeat;
       padding-top: 128px;
+    scroll-behavior: smooth;
+
       padding-bottom: 128px;
   }
 .plus{
@@ -544,6 +552,8 @@ td{
 
 /* contact */
 .contact{
+    scroll-behavior: smooth;
+
     background-image: url(./img/bg9.png);
     background-size: cover;
     padding: 54px 0;
